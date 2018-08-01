@@ -171,4 +171,4 @@ void token::close( account_name owner, symbol_type symbol ) {
 
 } /// namespace eosio
 
-EOSIO_ABI( eosio::token, (create)(issue)(transfer)(close)(retire) )
+EOSIO_ABI( eosio::token, (create)(issue)(transfer)(close)(retire)(changemax) )
