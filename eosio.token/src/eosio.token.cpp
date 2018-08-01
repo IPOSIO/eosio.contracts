@@ -84,7 +84,7 @@ void token::retire( asset quantity, string memo )
     sub_balance( st.issuer, quantity );
 }
   
-void token::change_max( asset quantity, string memo )
+void token::changemax( asset quantity, string memo )
 {
     auto sym = quantity.symbol;
     eosio_assert( sym.is_valid(), "invalid symbol name" );
