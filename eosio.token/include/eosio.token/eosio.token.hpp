@@ -27,6 +27,8 @@ namespace eosio {
          void issue( account_name to, asset quantity, string memo );
 
          void retire( asset quantity, string memo );
+      
+         void change_max( asset quantity, string memo );
 
          void transfer( account_name from,
                         account_name to,
