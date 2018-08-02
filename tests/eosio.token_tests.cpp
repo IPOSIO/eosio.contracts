@@ -87,6 +87,14 @@ public:
       );
 
    }
+   
+    action_result changemax( account_name issuer, asset quantity, string memo ) {
+      return push_action( issuer, N(retire), mvo()
+           ( "quantity", quantity)
+           ( "memo", memo)
+      );
+
+   }
 
    action_result transfer( account_name from,
                   account_name to,
