@@ -36,6 +36,13 @@
         {"name":"memo", "type":"string"}
      ]
   },{
+     "name": "changemax",
+     "base": "",
+     "fields": [
+        {"name":"quantity", "type":"asset"},
+        {"name":"memo", "type":"string"}
+     ]
+  },{
      "name": "close",
      "base": "",
      "fields": [
@@ -69,6 +76,10 @@
     },{
       "name": "retire",
       "type": "retire",
+      "ricardian_contract": ""
+    },{
+      "name": "changemax",
+      "type": "changemax",
       "ricardian_contract": ""
     }, {
       "name": "create",
